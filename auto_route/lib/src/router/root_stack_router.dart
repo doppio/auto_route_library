@@ -31,6 +31,7 @@ abstract class RootStackRouter extends BranchEntry {
       initialDeepLink: initialDeepLink,
       initialRoutes: initialRoutes,
       navRestorationScopeId: navRestorationScopeId,
+      navigatorKey: navigatorKey,
       navigatorObservers: navigatorObservers,
     );
   }

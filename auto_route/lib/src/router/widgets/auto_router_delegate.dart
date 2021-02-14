@@ -36,9 +36,10 @@ class RootRouterDelegate extends RouterDelegate<List<PageRouteInfo>>
     this.navRestorationScopeId,
     this.initialDeepLink,
     this.navigatorObservers = const [],
+    GlobalKey<NavigatorState> navigatorKey,
   })  : assert(initialDeepLink == null || initialRoutes == null),
         assert(controller != null),
-        navigatorKey = GlobalKey<NavigatorState>() {
+        navigatorKey = navigatorKey ?? GlobalKey<NavigatorState>() {
     controller.addListener(notifyListeners);
   }
 
